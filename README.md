@@ -109,6 +109,9 @@ listed in `samples/web/sources.json`. `tools/format_matrix.py` imports and rende
 `output/format_matrix/` (`report.md`, `contact_sheet.png`, one PNG per format).
 
 Latest run (2026-11-20): **33 of 37 samples imported and rendered.**
+The full report with a render of every sample is [docs/format-matrix.html](docs/format-matrix.html), a
+self-contained page (fonts and images embedded) that opens offline in any browser. The renders
+come from the ovrtx Render Service.
 
 | Result | Formats |
 |---|---|

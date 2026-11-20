@@ -124,7 +124,8 @@ FBX, DAE, 3DS, 3MF and glTF.
 - The service adds its own lighting, so the viewer lights are now opt-in (`--shot-lights`).
 - The service needs absolute paths. For a path it cannot resolve, it reports `done` and returns a
   solid magenta frame.
-- Published the results as a private report page in the user's claude.ai account.
+- Published the results as a private report page in the user's claude.ai account. A self-contained copy, with fonts and images embedded, is
+  [docs/format-matrix.html](docs/format-matrix.html).
 
 ## 6. Publishing
 
@@ -133,6 +134,12 @@ FBX, DAE, 3DS, 3MF and glTF.
 > also add a readme with the prompts and steps from our session
 
 Created `perfectproducts/cad-to-openusd` (public) and added this file.
+
+> add an Apache-2.0 license and push
+
+> also add the artifacts as self contained html
+
+Added `LICENSE` (Apache-2.0) and `docs/format-matrix.html`.
 
 ---
 
