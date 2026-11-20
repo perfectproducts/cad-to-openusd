@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+logs/
+.cache/
+output/
+third_party/usd-brep/
+third_party/*.log
+imgui.ini
+samples/web/

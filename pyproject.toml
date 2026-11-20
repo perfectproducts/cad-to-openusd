@@ -1,0 +1,34 @@
+[project]
+name = "cadview"
+version = "0.1.0"
+description = "Local CAD -> OpenUSD import tool and RTX viewer (usd-brep, ovrtx, ovstage, ovui)"
+readme = "README.md"
+# usd-brep and usd-convert-cad ship CPython 3.12 wheels only.
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ovrtx==0.7.0.1794596436",      # RTX renderer
+    "ovstage==0.4.0.1794520352",    # runtime stage ovrtx attaches to
+    "ovui==0.3.1",                  # native UI (omni.ui)
+    "usd-brep==1.0.2",              # BrepArray validate / heal / tessellate, SMLib
+    "usd-convert-cad==0.4.0",       # HOOPS-based converter (JT, Parasolid, CATIA, ...) + its pxr
+    "cadquery-ocp-novtk==8.0.1.1.0",  # OpenCASCADE: STEP / IGES / BREP reading (XCAF)
+    "numpy>=2",
+    "pillow>=10",
+]
+
+[project.optional-dependencies]
+# ovui inspector (screenshots / input automation) for UI QA: CADVIEW_INSPECT=1
+qa = ["fastapi>=0.100", "uvicorn[standard]>=0.23", "httpx>=0.25", "pydantic>=2", "python-multipart==0.0.33"]
+
+[project.scripts]
+cadview = "cadview.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cadview"]
+
+[tool.ruff]
+line-length = 120
