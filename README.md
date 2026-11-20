@@ -167,3 +167,16 @@ viewer process (ovui + ovrtx + ovstage)           worker processes (python -m ca
   instanced bolts, colours), from the pythonocc-demos repository.
 - `samples/box_with_large_fillet.smb`: SMLib BRep from usd-brep's test files.
 - `samples/occt_cylinder_brep.usda`: a `BrepArray` written by `occt_to_usd`.
+
+## License
+
+Apache License 2.0, see [LICENSE](LICENSE).
+
+Sample files keep their own licences:
+
+- `samples/as1-oc-214.stp` is OpenCASCADE sample data (LGPL-2.1 with the OCCT exception).
+- `samples/box_with_large_fillet.smb` comes from [usd-brep](https://github.com/NVIDIA-Omniverse/usd-brep) (Apache-2.0).
+
+Dependencies such as ovrtx, ovstage, ovui, usd-convert-cad and OpenCASCADE are installed from PyPI
+under their own terms. The files downloaded by `tools/fetch_web_samples.py` are not part of this
+repository.

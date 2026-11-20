@@ -3,6 +3,8 @@ name = "cadview"
 version = "0.1.0"
 description = "Local CAD -> OpenUSD import tool and RTX viewer (usd-brep, ovrtx, ovstage, ovui)"
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 # usd-brep and usd-convert-cad ship CPython 3.12 wheels only.
 requires-python = ">=3.12,<3.13"
 dependencies = [
